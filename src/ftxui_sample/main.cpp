@@ -312,6 +312,8 @@ void game_iteration_canvas()
 // NOLINTNEXTLINE(bugprone-exception-escape)
 int main(int argc, const char **argv)
 {
+  SPDLOG_INFO("Starting {} version {}", myproject::cmake::project_name, myproject::cmake::project_version);
+
   try {
     CLI::App app{ fmt::format("{} version {}", myproject::cmake::project_name, myproject::cmake::project_version) };
 
